@@ -239,7 +239,7 @@ export default function Portfolio() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            <div className="gradient-border animate-scale-in hover:scale-105 transition-transform duration-300">
+            <div className="gradient-border animate-scale-in hover:scale-105 transition-transform duration-300 hover-wiggle">
               <div className="gradient-border-content p-6 md:p-8 h-full">
                 <div className="flex items-center justify-between gap-2 md:gap-3 mb-3 md:mb-4">
                   <div className="flex items-center gap-2 md:gap-3">
@@ -261,25 +261,23 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="gradient-border animate-scale-in hover:scale-105 transition-transform duration-300" style={{animationDelay: '0.1s'}}>
+            <div className="gradient-border animate-scale-in hover:scale-105 transition-transform duration-300 hover-wiggle" style={{animationDelay: '0.1s'}}>
               <div className="gradient-border-content p-6 md:p-8 h-full">
-                <div className="flex items-center justify-between gap-2 md:gap-3 mb-3 md:mb-4">
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <Zap className="text-violet-400 animate-float w-6 h-6" style={{animationDelay: '0.5s'}} />
-                    <h3 className="text-xl md:text-2xl font-bold text-slate-100">Currency Converter</h3>
-                  </div>
-                  <a href="https://dineshchandra24.github.io/Currency-Converter/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-violet-500/10 text-violet-400 text-xs font-medium rounded-lg border border-violet-500/20 hover:bg-violet-500/20 transition">
-                    Visit <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
+                <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
+                  <Zap className="text-violet-400 animate-float w-6 h-6" style={{animationDelay: '0.5s'}} />
+                  <h3 className="text-xl md:text-2xl font-bold text-slate-100">Currency Converter</h3>
                 </div>
                 <p className="text-slate-400 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
                   Real-time currency exchange application with live market rates. Built with vanilla JavaScript and external APIs for accurate conversions.
                 </p>
-                <div className="flex gap-2 flex-wrap">
+                <div className="flex gap-2 flex-wrap mb-4">
                   <span className="px-2.5 py-1 md:px-3 md:py-1 bg-violet-500/10 text-violet-400 text-xs font-medium rounded-full border border-violet-500/20 hover:bg-violet-500/20 transition">JavaScript</span>
                   <span className="px-2.5 py-1 md:px-3 md:py-1 bg-violet-500/10 text-violet-400 text-xs font-medium rounded-full border border-violet-500/20 hover:bg-violet-500/20 transition">REST API</span>
                   <span className="px-2.5 py-1 md:px-3 md:py-1 bg-violet-500/10 text-violet-400 text-xs font-medium rounded-full border border-violet-500/20 hover:bg-violet-500/20 transition">Responsive</span>
                 </div>
+                <a href="https://dineshchandra24.github.io/Currency-Converter/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-violet-500/10 text-violet-400 text-sm font-medium rounded-lg border border-violet-500/20 hover:bg-violet-500/20 transition">
+                  Visit <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
             </div>
           </div>
